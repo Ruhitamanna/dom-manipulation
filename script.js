@@ -27,7 +27,7 @@ function changeBGcolor(event){
         
     }
     
-}
+} 
 
 function redirectToGoogle(event){
     window.location.assign("http://www.google.com")
@@ -39,4 +39,21 @@ function redirectToGoogle(event){
     var paragraph=$('<p>').text('Hello World');
     $('#task4a').append(paragraph);
     
-})
+});
+
+
+
+
+function changeBG(event){
+    var color=event.target.innerText.toLowerCase();
+    $('body').css('background-color',color);
+}
+
+
+//4c
+$("#sum").click(function(event){
+    var sum= Number($("#num1").val())+Number($("#num2").val());
+    $('result').text(sum);
+    
+    
+});
